@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(#2b1055,#7597de);
+    height: 100vh;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 60px;
+    z-index: 99;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        li{
+            font-size: 1.1em;
+            margin-left: 8px;
+            a{
+                text-decoration: none;
+                color: white;
+                padding: 8px 20px;
+                &:hover{
+                    background: white;
+                    color: black;
+                    border-radius: 40px;
+                }
+            }
+
+            .active{
+                background: white;
+                color: black;
+                border-radius: 40px;
+            }
+        }
+    }
+
+    #logo{
+        font-size: 2.5em;
+        font-weight: 900;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+    }
+}
+
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 100px;
+
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #moon{
+        mix-blend-mode: screen;
+    }
+
+    #text{
+        position: absolute;
+        color: white;
+        right: -100px;
+        font-size: 7.5em;
+        z-index: 9;
+    }
+
+    #mountains_front{
+        z-index: 10;
+    }
+
+    #btn{
+        position: absolute;
+        padding: 15px 50px;
+        background: white;
+        color: #2b1055;
+        text-decoration: none;
+        border-radius: 40px;
+        transform: translateY(100px);
+        z-index: 10;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(to top,#2b1055, transparent);
+        z-index: 100;
+    }
+}
+
+#sec{
+    padding: 20px;
+    color: white;
+    h1{
+        font-size: 3em;
+        font-weight: 900;
+    }
+    p{
+        font-size: 1.2em;
+    }
+}
