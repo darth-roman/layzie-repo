@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+$primary: #277DA1;
+$secondary: #9CD1E7;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+body{
+    background: #010101;
+    color: #eee;
+    height: 100vh;
+    .container{
+        max-width: 600px;
+        height: 70vh;
+        margin: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+        line-height: 1.6;
+        
+        nav {
+            width: 30%;
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                color: $secondary;
+                li{
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        ul{
+            list-style-type: none;
+        }
+
+        main{
+            h1{
+                margin-bottom: 30px;
+                color: $primary;
+                font-size: 2.3em;
+                letter-spacing: -2px;
+            }
+
+            a{
+                color: $primary;
+                text-decoration: none;
+            }
+            
+        }
+        
+        footer{
+            span{
+                color: $secondary;
+            }
+            .cursor{
+                font-weight: 700;
+                animation: blink 0.5s step-end infinite;
+            }
+        }
+        
+        .hidden{
+            display: none;
+            
+        }
+    }
+}
+
+
+
+h2{
+    color: $primary;
+}
+
+.cursor{
+    font-weight: 700;
+    animation: blink 1s step-end infinite ;
+}
+
+.winbox{
+    .wb-body{
+        background: #111;
+        padding: 30px;
+        ul{
+            margin: 20px 0;
+            list-style-type: '#> ';
+        }
+        p{
+            margin: 20px 0;
+        }
+}
+}
+
+
+@keyframes blink {
+    from, to{
+        color: transparent;
+    }
+
+    50%{
+        color: $primary;
+    }
+}

@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+body {
+  background: #010101;
+  color: #eee;
+  height: 100vh;
+}
+
+body .container {
+  max-width: 600px;
+  height: 70vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.6;
+}
+
+body .container nav {
+  width: 30%;
+}
+
+body .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #9CD1E7;
+}
+
+body .container nav ul li {
+  cursor: pointer;
+}
+
+body .container ul {
+  list-style-type: none;
+}
+
+body .container main h1 {
+  margin-bottom: 30px;
+  color: #277DA1;
+  font-size: 2.3em;
+  letter-spacing: -2px;
+}
+
+body .container main a {
+  color: #277DA1;
+  text-decoration: none;
+}
+
+body .container footer span {
+  color: #9CD1E7;
+}
+
+body .container footer .cursor {
+  font-weight: 700;
+  -webkit-animation: blink 0.5s step-end infinite;
+          animation: blink 0.5s step-end infinite;
+}
+
+body .container .hidden {
+  display: none;
+}
+
+h2 {
+  color: #277DA1;
+}
+
+.cursor {
+  font-weight: 700;
+  -webkit-animation: blink 1s step-end infinite;
+          animation: blink 1s step-end infinite;
+}
+
+.winbox .wb-body {
+  background: #111;
+  padding: 30px;
+}
+
+.winbox .wb-body ul {
+  margin: 20px 0;
+  list-style-type: '#> ';
+}
+
+.winbox .wb-body p {
+  margin: 20px 0;
+}
+
+@-webkit-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #277DA1;
+  }
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #277DA1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
